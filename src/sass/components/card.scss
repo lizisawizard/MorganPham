@@ -1,0 +1,74 @@
+.platformCard {
+    display: flex;
+    padding: 12px;
+    margin-bottom: 24px;
+    color: white;
+
+    &.one {
+        background-color: $brand-2;
+        border-bottom: solid 10px $brand-3;
+    }
+
+    &.two {
+        background-color: $brand-8;
+        border-bottom: solid 10px $brand-9;
+    }
+
+    &.three {
+        background-color: $brand-5;
+        border-bottom: solid 10px $brand-6;
+    }
+
+    &.four {
+        background-color: $secondary-3;
+        border-bottom: solid 10px $secondary-2;
+    }
+    
+    &--title {
+        margin: 0;
+    }
+
+    &--description {
+        margin: 0;
+    }
+
+    &--icon-container {
+        width: 50px;
+        padding-right: 12px;
+        flex-wrap: wrap;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .platformCard {
+        width: 100%;
+        margin: 0px 24px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .platformCard {
+        width: 100%;
+        margin: 0px 24px;
+        margin-bottom: 12px;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .platformCard {
+        width: 50vw;
+
+        &--icon-container {
+            .material-symbols-outlined {
+                font-size: 42px;
+            }
+        }
+    }
+}

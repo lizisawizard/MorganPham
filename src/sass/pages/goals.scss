@@ -1,0 +1,115 @@
+.goals {
+    text-align: center;
+}
+
+.platformPoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title { margin: 0; }
+    .subtitle { 
+        margin: 8px 0; 
+        font-size: 12px; 
+    }
+
+    .material-symbols-outlined.platform {
+        font-size: 100px;
+    }
+
+    &.green {
+        padding-bottom: 24px;
+        .material-symbols-outlined.platform {
+            color: $brand-8;
+        }
+    }
+
+    &.blue {
+        padding-bottom: 24px;
+        .material-symbols-outlined.platform {
+            color: $brand-5;
+        }
+    }
+
+    &.purple {
+        padding-bottom: 24px;
+        .material-symbols-outlined.platform {
+            color: $brand-2;
+        }
+    }
+}
+
+.dropdown {
+    margin: 6px 0px;
+
+    &--button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        border-radius: 7px;
+        width: 275px;
+        padding: 8px;
+        color: white;
+
+        &.clicked {
+            transition: rotate 2s;
+            transform: rotate(180deg);
+        }
+
+        &.green { background: $brand-9; }
+        &.blue { background: $brand-6; }
+        &.purple { background: $brand-3; }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    h2 { margin: 0; }
+    p { margin: 0; }
+
+    &--content {
+        display: none;
+        &.active {
+            padding-top: 8px;
+            display: block;
+            max-width: 275px;
+        }
+    }
+}
+
+@keyframes rotate-dropdown {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .goals {
+        &--grid {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) { 
+    .goals {
+        &--grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+    .goals {
+        &--grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}

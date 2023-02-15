@@ -1,0 +1,133 @@
+.about {
+    h3 { margin: 0 }
+
+    &--together {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.img-banner {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+
+    &-container {
+        height: 175px;
+        width: 90vw;
+        background-color: $brand-2;
+        margin-bottom: 24px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .about {
+        &.text-wall {
+            text-align: center;
+            padding: 0px 24px;
+        }
+
+        &--individuals {
+            width: 100%;
+        }
+
+        &--individual {
+            display: flex;
+            align-items: flex-end;
+            padding-right: 24px;
+            padding-bottom: 24px;
+
+            &-img {
+                padding-right: 12px;
+                object-fit: cover;
+                width: 35vw;
+                height: 550px;
+            }
+
+            &-description {
+                font-size: 12px;
+                width: 60vw;
+            }
+        }
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) { 
+    .about {
+        &.text-wall {
+            text-align: center;
+            padding: 0px 24px;
+        }
+
+        &--individuals {
+            width: 100%;
+            padding: 24px 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &--individual {
+            padding-right: 24px;
+
+            &-img {
+                padding-right: 12px;
+                object-fit: cover;
+                width: 35vw;
+                height: 550px;
+            }
+
+            &-description {
+                font-size: 12px;
+                width: 40vw;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+    .about {
+        &.text-wall {
+            margin: 0 0 24px 0;
+            padding: 12px 56px;
+        }
+
+        &--individuals {
+            width: 100%;
+            padding: 24px 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &--individual {
+            display: flex;
+            align-items: flex-end;
+            padding-right: 24px;
+    
+            &-img {
+                padding-right: 12px;
+                object-fit: cover;
+                width: 150px;
+                height: 550px;
+            }
+    
+            &-name {
+                padding: 12px 0px;
+            }
+    
+            &-description {
+                width: 30vw;
+                padding-top: 12px;
+            }
+    
+            p { 
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

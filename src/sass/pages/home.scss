@@ -1,0 +1,125 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &.platformCard--group {
+        flex-direction: column;
+    }
+
+    &.img {
+        border: solid 10px $brand-1;
+        border-top-left-radius: 300px;
+        border-top-right-radius: 300px;
+
+        &-container {
+            background: $brand-4;
+            border-top-left-radius: 300px;
+            border-top-right-radius: 300px;
+        }
+    }
+
+    &--img-group {
+        text-align: center;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .home {
+        &.platformCard--group {
+            flex-direction: column;
+            margin: 0px 36px;
+        }
+
+        &--img-group {
+            display: flex;
+            margin-bottom: 24px;
+            flex-direction: column;
+            align-items: center;
+
+
+            h1 { 
+                font-size: 32px; 
+                margin: 0;
+            }
+            
+            p { 
+                font-size: 18px; 
+                margin: 0;
+            }
+        }
+
+        &.img {
+            width: 300px;
+            height: 300px;
+
+            &-container {
+                width: 300px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .home {
+        &--img-group {
+            display: flex;
+            margin-bottom: 24px;
+            flex-direction: column;
+            align-items: center;
+
+
+            h1 { 
+                font-size: 32px; 
+                margin: 0;
+            }
+            
+            p { 
+                font-size: 18px; 
+                margin: 0;
+            }
+        }
+
+        &.img {
+            width: inherit;
+            height: 300px;
+
+            &-container {
+                width: 300px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .home {
+        height: 80vh;
+
+        &.home--display {
+            flex-direction: row;
+        }
+
+        &--brand {
+            display: none;
+        }
+
+        &.img {
+            width: inherit;
+            height: inherit;
+
+            &-container {
+                width: 500px;
+                height: 80vh;
+                margin-top: 64px;
+                margin-right: 32px;
+            }
+        }
+    }
+}

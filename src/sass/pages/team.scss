@@ -1,0 +1,23 @@
+.team {
+    text-align: center;
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+.teamCard {
+    &--img {
+        border-top-right-radius: 300px;
+        border-top-left-radius: 300px;
+        border: solid 8px $brand-5;
+        width: 130px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    &--name {
+        font-size: 18px;
+        margin: 8px 0px;
+    }
+}
