@@ -14,14 +14,14 @@ const Home = () => {
             />
           <div className="home--brand">
             <h1>Taylor & Vu</h1>
-            <p>work for you</p>
+            <p>working for you</p>
           </div>
         </div>
         <div className="home platformCard--group">
           <h2>We're dedicated to YOU!</h2>
           <PlatformCard
             title="Infrastructure"
-            description="Making campus to be accessible for you"
+            description="Making campus accessible for you"
             icon="foundation"
             number="one"
           />
