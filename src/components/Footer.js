@@ -1,6 +1,5 @@
 import React from "react";
 import Instagram from "../images/instagram.svg";
-import TikTok from "../images/tiktok.svg";
 import BeReal from "../images/bereal.svg";
 
 const Footer = ({ openMenu }) => {
