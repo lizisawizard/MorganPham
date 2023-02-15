@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { 
-  BrowserRouter, 
+  BrowserRouter,
+  // HashRouter, 
   Route,
   Routes,
 } from "react-router-dom";
@@ -17,11 +18,11 @@ import Support from "./pages/Support";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* <HashRouter basename={process.env.PUBLIC_URL} hashType='slash'> */}
     <BrowserRouter>
       <Routes>
-        {/* <Route exact path="/" element={<Navigate to="/home"/>}> */}
         <Route exact path="/" element={<App/>}>
-          <Route to="/home"/>
+          <Route path="/" element={<Home/>}/>
           <Route path="home" element={<Home/>}></Route>
           <Route path="about" element={<About/>}></Route>
           <Route path="goals" element={<Goals/>}></Route>
