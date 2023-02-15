@@ -17,7 +17,7 @@ function App() {
         </div>
         <Outlet/>
       </div>
-      <footer className={`footer ${openMenu ? 'hidden' : ''}`}/>
+      <Footer/>
     </div>
   );
 }
