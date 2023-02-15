@@ -81,27 +81,27 @@ const Goals = () => {
             {
               title: "Co-sponsorship Opportunities",
               content:
-                "Celebrate our diversity by featuring stories, books, and artwork of different heritages every month across the libraries and TUC",
+                "Increase co-sponsorship opportunities for student organizations across campus. Extend funding allocations to more collaborative events and initiatives across campus",
             },
             {
               title: "Promoting Student Orgs",
               content:
-                "Roll out Angel Shot at establishments around campus. Establish an ally pact with organizations to ensure gender-based violence prevention measures are in place anytime they host events off-campus",
+                "Instill weekly student group spotlights in Senate and on Instagram. Spread awareness for new and growing student organizations, uplift student organizations to the largest audience possible",
             },
             {
               title: "Up UC & Community Partnerships",
               content:
-                "Work in collaboration with identity-based centers to enroll students in bystander training. Encourage intervention when a student suspects risks of violence or abuse. Increase students who are taught how to train groups on behalf of identity-based centers",
+                "Increase partnerships with student organizations and local enterprises to facilitate events on campus such as volunteer recruitment, recruitment and retention of students, collaborative trainings, CPS etc.",
             },
             {
               title: "UC on the Map",
               content:
-                "Encourage students to come to trainings and identity discussions by providing service opportunities and associated service hours (e.g. blanket making while discussing impact of gender on society)",
+                "Connect colleges to their alumni networks by collaborating with SAC for dinners with bearcats. Encourage students to pursue mentorship opportunities with alumni",
             },
             {
               title: "Pay it Forward",
               content:
-                "Increase access to CAPS counselors and mental health resources on campus",
+                "Advocate on the behalf of students for paid work opportunities to fulfill their curriculum requirements, especially A&S and CECH. Increase campus-wide networking opportunities.  Increase undergraduate research opportunity accessibility especially within the scope of the Cincinnati Innovation District",
             },
           ]}
         />
