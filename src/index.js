@@ -21,7 +21,7 @@ root.render(
       <Routes>
         {/* <Route exact path="/" element={<Navigate to="/home"/>}> */}
         <Route exact path="/" element={<App/>}>
-          <Route to="home"/>
+          <Route to="/home"/>
           <Route path="home" element={<Home/>}></Route>
           <Route path="about" element={<About/>}></Route>
           <Route path="goals" element={<Goals/>}></Route>

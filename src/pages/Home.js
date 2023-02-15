@@ -1,6 +1,6 @@
 import React from "react";
 import PlatformCard from "../components/PlatformCard";
-import NipperImg from "../images/nippert.jpg";
+import HomeImg from "../images/home-pic.jpeg";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
           <div className="home img-container">
             <img
               className="home img"
-              src={NipperImg}
+              src={HomeImg}
               alt="Vu + Taylor on Nippert Stadium"
             />
           </div>
@@ -20,6 +20,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home platformCard--group">
+          <h2>We're dedicated to YOU!</h2>
           <PlatformCard
             title="Infrastructure"
             description="Making campus to be accessible for you"
