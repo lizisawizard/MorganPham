@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import CloseButton from "./CloseButton";
 import HamburgerMenu from "./HamburgerMenu";

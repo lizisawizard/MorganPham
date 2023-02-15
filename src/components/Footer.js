@@ -8,9 +8,9 @@ const Footer = ({ openMenu }) => {
     <footer className={`footer ${openMenu ? "hidden" : ""}`}>
       <p>Connect with us</p>
       <div className="footer--socials">
-        <img className="footer--icon" src={TikTok} />
-        <img className="footer--icon" src={Instagram} />
-        <img className="footer--icon" src={BeReal} />
+        <img className="footer--icon" src={TikTok} alt="TikTok logo"/>
+        <img className="footer--icon" src={Instagram} alt="Instagram logo"/>
+        <img className="footer--icon" src={BeReal} alt="BeReal logo"/>
       </div>
       <p>
         <a href="https://github.com/lizisawizard/MorganPham">Project Home</a> |{" "}

@@ -9,7 +9,11 @@ const About = () => {
       <div className="about--together">
         <h2>ABOUT US</h2>
         <div className="img-banner-container">
-          <img className="img-banner" src={BannerImg} />
+          <img
+            className="img-banner"
+            src={BannerImg}
+            alt="Vu and Taylor in front of the A&S building"
+          />
         </div>
         <h3>
           "We've dedicated our UC career to improving student life, and we are
@@ -41,7 +45,11 @@ const About = () => {
       </div>
       <div className="about--individuals">
         <div className="about--individual">
-          <img src={Taylor} className="about--individual-img" />
+          <img
+            src={Taylor}
+            className="about--individual-img"
+            alt="Taylor Morgan Headshot"
+          />
           <span>
             <p>PRESIDENTIAL CANDIDATE</p>
             <h2>TAYLOR MORGAN</h2>
@@ -75,7 +83,11 @@ const About = () => {
           </span>
         </div>
         <div className="about--individual">
-          <img src={Vu} className="about--individual-img" />
+          <img
+            src={Vu}
+            className="about--individual-img"
+            alt="Vu Pham Headshot"
+          />
           <span>
             <p>VICE PRESIDENTIAL CANDIDATE</p>
             <h2>VU PHAM</h2>
