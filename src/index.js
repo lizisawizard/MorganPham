@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { 
   BrowserRouter, 
-  Navigate, 
+  useNavigate, 
   Route,
   Routes,
 } from "react-router-dom";
@@ -22,6 +22,7 @@ root.render(
       <Routes>
         {/* <Route exact path="/" element={<Navigate to="/home"/>}> */}
         <Route exact path="/" element={<App/>}>
+          <Route to="home"/>
           <Route path="home" element={<Home/>}></Route>
           <Route path="about" element={<About/>}></Route>
           <Route path="goals" element={<Goals/>}></Route>
