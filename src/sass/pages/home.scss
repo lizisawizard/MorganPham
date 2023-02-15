@@ -10,15 +10,11 @@
 
     &.img {
         object-fit: cover;
-        border: solid 10px $brand-1;
-        border-top-left-radius: 300px;
-        border-top-right-radius: 300px;
+    }
 
-        &-container {
-            background: $brand-4;
-            border-top-left-radius: 300px;
-            border-top-right-radius: 300px;
-        }
+    &--brand {
+        position: relative;
+        padding-top: 24px;
     }
 
     &--img-group {
@@ -53,8 +49,12 @@
         }
 
         &.img {
-            width: 300px;
-            height: 300px;
+            // width: 300px;
+            // height: 300px;
+            max-width: 35vw;
+                max-height: 40vw;
+                min-width: 400px;
+                height: auto;
 
             &-container {
                 max-width: 35vw;
@@ -88,11 +88,14 @@
         }
 
         &.img {
-            width: inherit;
-            height: inherit;
-            max-width: inherit;
-            max-height: inherit;
-            min-width: inherit;
+            max-width: 35vw;
+            max-height: 35vw;
+            min-width: 400px;
+            min-height: 40vh;
+
+            border: solid 10px $brand-1;
+            border-top-left-radius: 300px;
+            border-top-right-radius: 300px;
 
             &-container {
                 max-width: 35vw;
@@ -118,18 +121,10 @@
         }
 
         &.img {
-            width: inherit;
-            height: inherit;
-            max-width: inherit;
-            max-height: inherit;
-            min-width: inherit;
-
-            &-container {
-                max-width: 35vw;
-                max-height: 35vw;
-                min-width: 400px;
-                height: auto;
-            }
+            max-width: 35vw;
+            max-height: 35vw;
+            min-width: 400px;
+            height: auto;
         }
     }
 }

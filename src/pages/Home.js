@@ -7,13 +7,11 @@ const Home = () => {
     <div className="home">
       <div className="home home--display">
         <div className="home--img-group">
-          <div className="home img-container">
             <img
               className="home img"
               src={HomeImg}
               alt="Vu + Taylor on Nippert Stadium"
             />
-          </div>
           <div className="home--brand">
             <h1>Taylor & Vu</h1>
             <p>work for you</p>
