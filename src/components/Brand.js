@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import circleLogo from "../images/T+V_Buttons-02.png";
 
-const Brand = () => {
+const Brand = ({openMenu}) => {
 
     return (
-        <div className="brand">
+        <div className={`brand ${openMenu ? 'nav-open' : ""}`}>
             <NavLink to='/home' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>
                 <div className="brand img-container">
                     <img className="brand img" src={circleLogo}/>

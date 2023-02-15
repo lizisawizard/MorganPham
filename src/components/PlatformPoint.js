@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 const PlatformPoint = ({title, subtitle, icon, initiatives, color}) => {
     return (
         <div className={`platformPoint ${color}`}>
-            <span class="material-symbols-outlined platform">
+            <span className="material-symbols-outlined platform">
                 {icon}
             </span>
             <h2 className="platformPoint title">{title}</h2>

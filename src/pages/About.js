@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImg from "../images/AandS.jpg";
+import BannerImg from "../images/AandS2.jpg";
 import Taylor from "../images/taylor-2.jpg";
 import Vu from "../images/vu-2.jpg";
 
@@ -23,24 +23,20 @@ const About = () => {
           that have been successful in collaborating with multiple groups to
           host events, initiatives, and programming. <br />
           <br />
-          We want to represent your voice! Look out for more feedback options
-          and a student dashboard where you can pose questions, bring up
+          We want to represent your voice! Be on the look out for more feedback
+          options and a student dashboard where you can pose questions, bring up
           suggestions, and speak your voice for us to communicate to the
           administration. We have existing relationships with deans across the
           university and will be utilizing those relationships to host monthly
           town halls with UC administration to connect them to you.
           <br />
           <br />
-          Consectetur adipiscing elit pellentesque habitant morbi. Sollicitudin
-          nibh sit amet commodo nulla. Nibh tellus molestie nunc non blandit
-          massa. Non blandit massa enim nec dui. Ut tortor pretium viverra
-          suspendisse potenti nullam ac tortor. Nunc congue nisi vitae suscipit
-          tellus mauris a diam maecenas. Et netus et malesuada fames ac. Semper
-          eget duis at tellus at urna condimentum. Auctor neque vitae tempus
-          quam pellentesque nec. Suspendisse potenti nullam ac tortor vitae
-          purus. Lorem ipsum dolor sit amet consectetur. Morbi tristique
-          senectus et netus et malesuada. Nisi quis eleifend quam adipiscing.
-          Commodo ullamcorper a lacus vestibulum sed arcu.
+          More than anything, we want to ensure that we accomplish what we've
+          promised. Our platform is a promise to the students at UC to fulfill
+          their needs and expectations. We know our actions speak louder than
+          words. We've crafted our goals around YOU and what the student body
+          needs. So much of our time has already been dedicated to the success
+          of our peers, and we do not plan on stopping now.
         </p>
       </div>
       <div className="about--individuals">

@@ -18,30 +18,32 @@ import MaxKemats from "../images/team/MaxKemats.jpg";
 import JaelaKennedy from "../images/team/JaelaKennedy.jpeg";
 import AndrewWiedeman from "../images/team/AndrewWiedeman.jpeg";
 import AdeleneSomerville from "../images/team/AdeleneSomerville.PNG";
+import LizTremblay from "../images/team/LizTremblay.PNG";
 
 const Team = () => {
     return (
         <div className="team">
             <h2>OUR TEAM</h2>
             <div className="team--grid">
-                <TeamCard name="Jordan Klemt" img={JordanKlemt}/>
-                <TeamCard name="Sam Geiger" img={SamGeiger}/>
-                <TeamCard name="Mason Goins" img={MasonGoins}/>
-                <TeamCard name="Ellen Walter" img={EllenWalter}/>
-                <TeamCard name="Karishma Ponkshe" img={KarishmaPonkshe}/>
-                <TeamCard name="Joseph Rainford" img={JosephRainford}/>
-                <TeamCard name="Sydney Richardson" img={SydneyRichardson}/>
-                <TeamCard name="Austin Wood" img={AustinWood}/>
-                <TeamCard name="Mikayla Dixon" img={MikaylaDixon}/>
-                <TeamCard name="Maddie Pridemore" img={MaddiePridemore}/>
-                <TeamCard name="Jack Buckley" img={JackBuckley}/>
-                <TeamCard name="Trenton Stern" img={TrentonStern}/>
-                <TeamCard name="Rebekah Littlepage" img={RebekahLittlepage}/>
-                <TeamCard name="Lucy Gharibian-Aberg" img={LucyGharibianAberg}/>
-                <TeamCard name="Max Kemats" img={MaxKemats}/>
-                <TeamCard name="Jaela Kennedy" img={JaelaKennedy}/>
-                <TeamCard name="Andrew Wiedeman" img={AndrewWiedeman}/>
-                <TeamCard name="Adelene Somerville" img={AdeleneSomerville}/>
+                <TeamCard name="Jordan Klemt" type="manager" img={JordanKlemt}/>
+                <TeamCard name="Sam Geiger" type="operations" img={SamGeiger}/>
+                <TeamCard name="Mason Goins" type="unknown" img={MasonGoins}/>
+                <TeamCard name="Ellen Walter" type="operations" img={EllenWalter}/>
+                <TeamCard name="Joseph Rainford" type="manager" img={JosephRainford}/>
+                <TeamCard name="Karishma Ponkshe" type="unknown" img={KarishmaPonkshe}/>
+                <TeamCard name="Sydney Richardson" type="unknown" img={SydneyRichardson}/>
+                <TeamCard name="Austin Wood" type="manager" img={AustinWood}/>
+                <TeamCard name="Mikayla Dixon" type="marketing" img={MikaylaDixon}/>
+                <TeamCard name="Jack Buckley" type="operations" img={JackBuckley}/>
+                <TeamCard name="Maddie Pridemore" type="marketing" img={MaddiePridemore}/>
+                <TeamCard name="Rebekah Littlepage" type="operations" img={RebekahLittlepage}/>
+                <TeamCard name="Lucy Gharibian-Aberg" type="marketing" img={LucyGharibianAberg}/>
+                <TeamCard name="Max Kemats" type="operations" img={MaxKemats}/>
+                <TeamCard name="Jaela Kennedy" type="unknown" img={JaelaKennedy}/>
+                <TeamCard name="Andrew Wiedeman" type="marketing" img={AndrewWiedeman}/>
+                <TeamCard name="Adelene Somerville" type="unknown" img={AdeleneSomerville}/>
+                <TeamCard name="Liz Tremblay" type="marketing" img={LizTremblay}/>
+                <TeamCard name="Trenton Stern" type="manager" img={TrentonStern}/>
             </div>
         </div>
     )

@@ -1,8 +1,8 @@
 .team {
     text-align: center;
     &--grid {
+        padding: 36px 0px;
         display: grid;
-        grid-template-columns: repeat(6,1fr);
     }
 }
 
@@ -10,14 +10,46 @@
     &--img {
         border-top-right-radius: 300px;
         border-top-left-radius: 300px;
-        border: solid 8px $brand-5;
         width: 130px;
         height: 180px;
         object-fit: cover;
+
+        &.marketing { border: solid 8px $brand-5; }
+        &.operations { border: solid 8px $brand-7; }
+        &.manager { border: solid 8px $brand-3; }
+        &.unknown { border: solid 8px $brand-1; }
     }
 
     &--name {
         font-size: 18px;
         margin: 8px 0px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .team {
+        &--grid {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) { 
+    .team {
+        &--grid {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+    .team {
+        &--grid {
+            grid-template-columns: repeat(6,1fr);
+        }
     }
 }

@@ -1,10 +1,10 @@
 import React from "react";
 
-const Footer = ({type}) => {
+const Footer = ({openMenu}) => {
     return (
-        <div className="footer">
+        <footer className={`footer ${openMenu ? 'hidden' : ''}`}>
             
-        </div>
+        </footer>
     )
 }
 

@@ -17,6 +17,15 @@ h2, h3, h4, p, body {
   font-style: normal;
 }
 
+.page-content {
+  position: relative;
+
+  &.fixed {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
 .header {
   padding: 24px;
   display: flex;
@@ -63,21 +72,57 @@ h2, h3, h4, p, body {
       font-weight: 600;
     }
   }
-  
+
+  &--burger {
+    z-index: 2;
+    position: relative;
+  }
+
+  &--overlay {
+    display: none;
+
+    &.open {
+      display: block;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: $brand-4; 
+    }
+  }
 }
 
 .footer {
-  position: relative;
+  width:100%;
+  height: 35px;
   background-color: $brand-5;
-  width: 100%;
-  height: 5vh;
+  &.hidden { display: none; }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .navigation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
     &--list {
       display: none;
+
+      &.burger {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        z-index: 4;
+        height: 40vh;
+        font-size: 32px;
+        list-style: none;
+      }
     }
   
     &--item {
@@ -87,6 +132,7 @@ h2, h3, h4, p, body {
 
     &--burger {
       display: block;
+      text-align: right;
     }
   }
 
@@ -98,6 +144,10 @@ h2, h3, h4, p, body {
     &--slogan {
       display: none;
     }
+
+    &.nav-open {
+      display: none;
+    }
   }
 }
 
@@ -106,6 +156,12 @@ h2, h3, h4, p, body {
   .navigation {
     &--list {
       display: none;
+      &.burger {
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
     }
   
     &--item {
