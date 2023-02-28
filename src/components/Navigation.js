@@ -12,9 +12,6 @@ const Navigation = ({openMenu, setOpenMenu}) => {
             </div>
             <div className={`navigation--overlay ${openMenu ? "open" : ""}`}/>
             <ul className={`navigation--list ${openMenu ? "burger" : ""}`}>
-                {/* <li>
-                    <NavLink to='/home' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Home</NavLink>
-                </li> */}
                 <li>
                     <NavLink to='/about' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')} onClick={() => setOpenMenu(false)}>About Us</NavLink>
                 </li>
@@ -24,9 +21,9 @@ const Navigation = ({openMenu, setOpenMenu}) => {
                 <li>
                     <NavLink to='/team' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')} onClick={() => setOpenMenu(false)}>Our Team</NavLink>
                 </li>
-                {/* <li>
+                <li>
                     <NavLink to='/support' className={e => (e.isActive ? 'navigation--item active' : 'navigation--item')}>Our supporters</NavLink>
-                </li> */}
+                </li>
             </ul>
         </div>
     )

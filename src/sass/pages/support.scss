@@ -1,0 +1,12 @@
+.support {
+    &-grid {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    &-card {
+        width: 45vw;
+        margin-bottom: 24px;
+    }
+}
